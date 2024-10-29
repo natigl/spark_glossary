@@ -5,6 +5,8 @@
 scala
 
 // Configuración básica
+
+
 import org.apache.spark.sql.SparkSession
 
 val spark = SparkSession
@@ -17,5 +19,8 @@ val spark = SparkSession
   .enableHiveSupport()  // Si necesitas soporte de Hive
   .getOrCreate()
 
+
 // Obtener SparkContext desde SparkSession
+
+
 val sc = spark.sparkContext
